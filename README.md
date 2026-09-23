@@ -1,59 +1,82 @@
-# Frontprojeto
+# Barbearia - Front-end
 
-Este projeto foi gerado utilizando o [Angular CLI](https://github.com/angular/angular-cli) versão 22.0.6.
+Projeto de extensão desenvolvido durante o 2º semestre do curso de Análise e Desenvolvimento de Sistemas (ADS).
 
-## Servidor de desenvolvimento
+Este repositório contém apenas o **front-end** de um sistema de gestão para barbearia, construído com **Angular**. O objetivo do projeto é aplicar na prática os conceitos aprendidos em sala de aula, oferecendo uma interface para agendamento de horários, visualização de serviços e cadastro de clientes.
 
-Para iniciar um servidor de desenvolvimento local, execute:
+## 🛠️ Tecnologias utilizadas
+- Angular
+- TypeScript
+- HTML5
+- CSS3
 
+## 📌 Sobre o projeto
+Projeto acadêmico de extensão universitária, com foco no desenvolvimento do front-end de uma aplicação para barbearia. Os dados exibidos (serviços, trabalhos e equipe) são **mockados**, já que o back-end ainda será desenvolvido futuramente.
+
+## 📁 Estrutura do projeto
+
+frontprojeto/
+├── src/
+│ ├── app/
+│ │ ├── components/
+│ │ │ └── home/
+│ │ │ ├── home.ts # Lógica do componente principal
+│ │ │ ├── home.html # Template com as seções da página
+│ │ │ └── home.css # Estilos da página
+│ │ ├── mocks/
+│ │ │ └── mock-data.ts # Dados mockados (serviços, trabalhos, equipe)
+│ │ ├── models/
+│ │ │ ├── servico.ts # Interface Servico
+│ │ │ ├── trabalho.ts # Interface Trabalho
+│ │ │ └── barbeiro.ts # Interface Barbeiro
+│ │ ├── services/
+│ │ │ └── barbearia.ts # Service que simula chamadas de API
+│ │ ├── app.ts # Componente raiz da aplicação
+│ │ ├── app.html
+│ │ └── app.css
+│ ├── index.html
+│ └── styles.css
+├── angular.json
+├── package.json
+└── README.md
+
+
+## 🚀 Como rodar o projeto
+
+### Pré-requisitos
+- [Node.js](https://nodejs.org/) instalado (versão 18 ou superior)
+- [Angular CLI](https://angular.dev/tools/cli) instalado globalmente:
 ```bash
-ng serve
+  npm install -g @angular/cli
 ```
 
-Assim que o servidor estiver em execução, abra o navegador e acesse `http://localhost:4200/`. A aplicação será recarregada automaticamente sempre que você modificar qualquer um dos arquivos de código-fonte.
+### Passo a passo
 
-## Geração de código (Scaffolding)
-
-O Angular CLI inclui ferramentas poderosas para a geração de código. Para gerar um novo componente, execute:
-
+1. Clone o repositório:
 ```bash
-ng generate component component-name
+   git clone https://github.com/GuilhermeRibeiro12/projeto-de-extens-o-ads-2-semestre-front-end.git
 ```
 
-Para obter uma lista completa de *schematics* disponíveis (como `components`, `directives` ou `pipes`), execute:
-
+2. Entre na pasta do projeto:
 ```bash
-ng generate --help
+   cd projeto-de-extens-o-ads-2-semestre-front-end
 ```
 
-## Build (Compilação)
-
-Para compilar o projeto, execute:
-
+3. Instale as dependências:
 ```bash
-ng build
+   npm install
 ```
 
-Isso compilará seu projeto e armazenará os artefatos de build no diretório `dist/`. Por padrão, o build de produção otimiza sua aplicação para desempenho e velocidade.
-
-## Execução de testes unitários
-
-Para executar testes unitários com o executor de testes [Vitest](https://vitest.dev/), utilize o seguinte comando:
-
+4. Rode o servidor de desenvolvimento:
 ```bash
-ng test
+   ng serve
 ```
 
-## Execução de testes ponta a ponta (E2E)
+5. Abra o navegador em:
+http://localhost:4200
 
-Para testes ponta a ponta (e2e), execute:
 
-```bash
-ng e2e
-```
+A aplicação vai recarregar automaticamente sempre que você alterar algum arquivo.
 
-O Angular CLI não vem com um framework de testes ponta a ponta por padrão. Você pode escolher um que atenda às suas necessidades.
-
-## Recursos adicionais
-
-Para mais informações sobre o uso do Angular CLI, incluindo referências detalhadas de comandos, visite a página [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli).
+## 🚧 Status
+Em desenvolvimento.
