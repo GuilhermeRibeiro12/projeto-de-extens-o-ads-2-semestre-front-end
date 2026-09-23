@@ -1,0 +1,103 @@
+<div class="barber-content">
+
+<div class="navbar">
+  <div class="logo">
+    <span class="logo-circle">O</span>
+    <span class="logo-text">OTAVIO BARBERIA</span>
+  </div>
+  <div class="nav-links">
+    <a href="#servicos">SERVIÇOS</a>
+    <a href="#galeria">GALERIA</a>
+    <a href="#equipe">EQUIPE</a>
+    <a href="#contato">CONTATO</a>
+  </div>
+  <a href="#agendar" class="nav-agendar">AGENDAR</a>
+</div>
+
+<div class="hero">
+  <div class="hero-text">
+    <span class="eyebrow">BARBEARIA · EST. 2014</span>
+    <h1>O corte é o <em>seu</em> cartão de visita.</h1>
+    <p class="hero-desc">
+      Navalha afiada, café passado na hora e uma cadeira que te espera.
+      Cortes clássicos e modernos para quem leva a própria imagem a sério.
+    </p>
+    <button class="btn-primary">AGENDAR HORÁRIO →</button>
+
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-number">10+</span>
+        <span class="stat-label">ANOS DE OFÍCIO</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">4.9</span>
+        <span class="stat-label">AVALIAÇÃO MÉDIA</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">10k</span>
+        <span class="stat-label">CORTES FEITOS</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="hero-image">
+    <img src="assets/img/hero-barber.jpg" alt="Barbeiro cortando cabelo">
+  </div>
+</div>
+
+<div class="servicos" id="servicos">
+  <div class="section-header">
+    <h2>Nossos serviços</h2>
+    <span class="section-tag">PREÇOS A PARTIR DE</span>
+  </div>
+
+  <div class="servicos-grid">
+    <div class="servico-card">
+      <span class="servico-num">01</span>
+      <h3>Corte Clássico</h3>
+      <p>Tesoura e máquina, acabamento na navalha e finalização com pomada.</p>
+      <span class="servico-preco">R$ 60</span>
+    </div>
+    <div class="servico-card">
+      <span class="servico-num">02</span>
+      <h3>Barba Completa</h3>
+      <p>Toalha quente, óleo pré-barba e contornos precisos com navalha.</p>
+      <span class="servico-preco">R$ 50</span>
+    </div>
+    <div class="servico-card">
+      <span class="servico-num">03</span>
+      <h3>Pacote Completo</h3>
+      <p>Corte, barba e sobrancelha. A experiência full-service da casa.</p>
+      <span class="servico-preco">R$ 95</span>
+    </div>
+  </div>
+</div>
+
+<div class="galeria" id="galeria">
+  <div class="section-header">
+    <h2>Trabalhos recentes</h2>
+    <span class="section-tag">DIRETO DA CADEIRA</span>
+  </div>
+
+  <div class="equipe" id="equipe">
+  <div class="section-header">
+    <h2>Nossa equipe</h2>
+    <span class="section-tag">PROFISSIONAIS</span>
+  </div>
+
+  <div class="equipe-grid">
+    <div class="barbeiro-card" *ngFor="let barbeiro of barbeiros">
+      <img [src]="barbeiro.foto" [alt]="barbeiro.nome">
+      <h3>{{ barbeiro.nome }}</h3>
+      <p>{{ barbeiro.especialidade }}</p>
+    </div>
+  </div>
+</div>
+
+  <div class="galeria-grid">
+    <img src="assets/img/trabalho1.jpg" alt="Corte finalizado">
+    <img src="assets/img/trabalho2.jpg" alt="Barba sendo feita">
+    <img src="assets/img/cadeira.jpg" alt="Cadeira da barbearia">
+  </div>
+</div>
+</div>

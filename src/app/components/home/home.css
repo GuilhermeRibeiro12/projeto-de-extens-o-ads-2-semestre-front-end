@@ -1,0 +1,237 @@
+:host {
+  display: block;
+  background-color: #12100e;
+  color: #f2ede4;
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+em {
+  color: #c9a24b;
+  font-style: italic;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-circle {
+  border: 1px solid #c9a24b;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  color: #c9a24b;
+}
+
+.logo-text {
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  color: #f2ede4;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.nav-agendar {
+  color: #c9a24b;
+  text-decoration: underline;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  gap: 60px;
+}
+
+.hero-text {
+  max-width: 550px;
+}
+
+.eyebrow {
+  color: #c9a24b;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.hero-text h1 {
+  font-size: 56px;
+  line-height: 1.15;
+  margin: 20px 0;
+}
+
+.hero-desc {
+  color: #b8b2a7;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.btn-primary {
+  background-color: #c9a24b;
+  color: #12100e;
+  border: none;
+  padding: 16px 32px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 13px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.stats {
+  display: flex;
+  gap: 40px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: #8a8377;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+.hero-image img {
+  width: 430px;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* SEÇÕES GERAIS */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 60px 60px 40px;
+  border-top: 1px solid #2a2723;
+}
+
+.section-header h2 {
+  font-size: 36px;
+}
+
+.section-tag {
+  font-size: 11px;
+  color: #8a8377;
+  letter-spacing: 1px;
+}
+
+/* SERVIÇOS */
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 0 60px 60px;
+}
+
+.servico-num {
+  color: #c9a24b;
+  font-family: 'Playfair Display', serif;
+}
+
+.servico-card h3 {
+  font-size: 22px;
+  margin: 12px 0;
+}
+
+.servico-card p {
+  color: #b8b2a7;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.servico-preco {
+  font-family: 'Playfair Display', serif;
+  color: #c9a24b;
+  font-size: 20px;
+}
+
+/* GALERIA */
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0 60px 60px;
+}
+
+.galeria-grid img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* EQUIPE */
+.equipe-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 0 60px 60px;
+}
+
+.barbeiro-card {
+  text-align: center;
+}
+
+.barbeiro-card img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.barbeiro-card h3 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.barbeiro-card p {
+  color: #b8b2a7;
+  font-size: 14px;
+}
