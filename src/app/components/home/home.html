@@ -1,9 +1,7 @@
-<div class="barber-content">
-
 <div class="navbar">
   <div class="logo">
-    <span class="logo-circle">O</span>
-    <span class="logo-text">OTAVIO BARBERIA</span>
+    <span class="logo-circle">B</span>
+    <span class="logo-text">OTAVIO BARBEARIA</span>
   </div>
   <div class="nav-links">
     <a href="#servicos">SERVIÇOS</a>
@@ -34,14 +32,14 @@
         <span class="stat-label">AVALIAÇÃO MÉDIA</span>
       </div>
       <div class="stat">
-        <span class="stat-number">10k</span>
+        <span class="stat-number">12k</span>
         <span class="stat-label">CORTES FEITOS</span>
       </div>
     </div>
   </div>
-  
+
   <div class="hero-image">
-    <img src="assets/img/hero-barber.jpg" alt="Barbeiro cortando cabelo">
+    <img src="assets/img/logo.png" alt="Logo Otavio Barbearia">
   </div>
 </div>
 
@@ -52,24 +50,19 @@
   </div>
 
   <div class="servicos-grid">
-    <div class="servico-card">
-      <span class="servico-num">01</span>
-      <h3>Corte Clássico</h3>
-      <p>Tesoura e máquina, acabamento na navalha e finalização com pomada.</p>
-      <span class="servico-preco">R$ 60</span>
-    </div>
-    <div class="servico-card">
-      <span class="servico-num">02</span>
-      <h3>Barba Completa</h3>
-      <p>Toalha quente, óleo pré-barba e contornos precisos com navalha.</p>
-      <span class="servico-preco">R$ 50</span>
-    </div>
-    <div class="servico-card">
-      <span class="servico-num">03</span>
-      <h3>Pacote Completo</h3>
-      <p>Corte, barba e sobrancelha. A experiência full-service da casa.</p>
-      <span class="servico-preco">R$ 95</span>
-    </div>
+    @for (servico of servicos(); track servico.id; let i = $index) {
+      <div class="servico-card">
+        <span class="servico-num">{{ numero(i) }}</span>
+        <h3>{{ servico.nome }}</h3>
+        @if (servico.descricao) {
+          <p>{{ servico.descricao }}</p>
+        }
+        <div class="servico-rodape">
+          <span class="servico-preco">{{ formatarPreco(servico.preco) }}</span>
+          <span class="servico-duracao">{{ formatarDuracao(servico.duracao_minutos) }}</span>
+        </div>
+      </div>
+    }
   </div>
 </div>
 
@@ -79,25 +72,25 @@
     <span class="section-tag">DIRETO DA CADEIRA</span>
   </div>
 
-  <div class="equipe" id="equipe">
+  <div class="galeria-grid">
+    @for (trabalho of trabalhos(); track trabalho.id) {
+      <img [src]="trabalho.imagem" [alt]="trabalho.descricao">
+    }
+  </div>
+</div>
+
+<div class="equipe" id="equipe">
   <div class="section-header">
     <h2>Nossa equipe</h2>
     <span class="section-tag">PROFISSIONAIS</span>
   </div>
 
   <div class="equipe-grid">
-    <div class="barbeiro-card" *ngFor="let barbeiro of barbeiros">
-      <img [src]="barbeiro.foto" [alt]="barbeiro.nome">
-      <h3>{{ barbeiro.nome }}</h3>
-      <p>{{ barbeiro.especialidade }}</p>
-    </div>
+    @for (barbeiro of barbeiros(); track barbeiro.id) {
+      <div class="barbeiro-card">
+        <h3>{{ barbeiro.nome }}</h3>
+        <p>{{ barbeiro.especialidade }}</p>
+      </div>
+    }
   </div>
-</div>
-
-  <div class="galeria-grid">
-    <img src="assets/img/trabalho1.jpg" alt="Corte finalizado">
-    <img src="assets/img/trabalho2.jpg" alt="Barba sendo feita">
-    <img src="assets/img/cadeira.jpg" alt="Cadeira da barbearia">
-  </div>
-</div>
 </div>
