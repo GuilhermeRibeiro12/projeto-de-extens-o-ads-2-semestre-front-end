@@ -78,5 +78,3 @@ http://localhost:4200
 
 A aplicação vai recarregar automaticamente sempre que você alterar algum arquivo.
 
-## 🚧 Status
-Em desenvolvimento.
