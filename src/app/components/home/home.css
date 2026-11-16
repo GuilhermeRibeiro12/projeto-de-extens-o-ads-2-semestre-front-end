@@ -1,5 +1,7 @@
-:host {
+﻿:host {
   display: block;
+  width: 100%;
+  min-height: 100vh;
   background-color: #12100e;
   color: #f2ede4;
   font-family: 'Inter', sans-serif;
@@ -20,7 +22,7 @@ em {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 60px;
+  padding: 24px 60px;
 }
 
 .logo {
@@ -39,6 +41,7 @@ em {
   justify-content: center;
   font-family: 'Playfair Display', serif;
   color: #c9a24b;
+  flex-shrink: 0;
 }
 
 .logo-text {
@@ -49,7 +52,7 @@ em {
 
 .nav-links {
   display: flex;
-  gap: 40px;
+  gap: 36px;
 }
 
 .nav-links a {
@@ -64,18 +67,20 @@ em {
   text-decoration: underline;
   font-size: 13px;
   letter-spacing: 1px;
+  font-weight: 600;
 }
 
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px;
-  gap: 60px;
+  padding: 40px 60px 60px;
+  gap: 40px;
 }
 
 .hero-text {
-  max-width: 550px;
+  flex: 1;
+  max-width: 560px;
 }
 
 .eyebrow {
@@ -85,34 +90,36 @@ em {
 }
 
 .hero-text h1 {
-  font-size: 56px;
+  font-size: clamp(32px, 4.5vw, 54px);
   line-height: 1.15;
-  margin: 20px 0;
+  margin: 18px 0;
 }
 
 .hero-desc {
   color: #b8b2a7;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.6;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .btn-primary {
   background-color: #c9a24b;
   color: #12100e;
   border: none;
-  padding: 16px 32px;
+  padding: 15px 30px;
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 13px;
   border-radius: 30px;
   cursor: pointer;
-  margin-bottom: 50px;
+  margin-bottom: 44px;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .stats {
   display: flex;
-  gap: 40px;
+  gap: 36px;
 }
 
 .stat {
@@ -122,7 +129,7 @@ em {
 
 .stat-number {
   font-family: 'Playfair Display', serif;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .stat-label {
@@ -132,13 +139,22 @@ em {
   margin-top: 4px;
 }
 
+.hero-image {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-image img {
   display: block;
-  width: 380px;
-  height: 380px;
-  max-width: 100%;
+  width: 340px;
+  height: 340px;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: contain;
+  background-color: #0d0b09;
+  padding: 16px;
   border: 2px solid #c9a24b;
 }
 
@@ -146,12 +162,12 @@ em {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 60px 60px 40px;
+  padding: 50px 60px 36px;
   border-top: 1px solid #2a2723;
 }
 
 .section-header h2 {
-  font-size: 36px;
+  font-size: clamp(26px, 3vw, 36px);
 }
 
 .section-tag {
@@ -168,7 +184,7 @@ em {
 }
 
 .servico-card {
-  padding: 32px;
+  padding: 28px;
   border-left: 1px solid #2a2723;
   border-bottom: 1px solid #2a2723;
   display: flex;
@@ -181,8 +197,8 @@ em {
 }
 
 .servico-card h3 {
-  font-size: 22px;
-  margin: 12px 0;
+  font-size: 20px;
+  margin: 10px 0;
 }
 
 .servico-card p {
@@ -202,7 +218,7 @@ em {
 .servico-preco {
   font-family: 'Playfair Display', serif;
   color: #c9a24b;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .servico-duracao {
@@ -217,7 +233,6 @@ em {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 60px 60px;
-  box-sizing: content-box;
 }
 
 .galeria-grid img {
@@ -231,23 +246,22 @@ em {
 
 .equipe-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 60px 60px;
-  box-sizing: content-box;
 }
 
 .barbeiro-card {
   text-align: center;
-  padding: 48px 32px;
+  padding: 40px 24px;
   border-left: 1px solid #2a2723;
   border-bottom: 1px solid #2a2723;
 }
 
 .barbeiro-card h3 {
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 8px;
 }
 
@@ -256,4 +270,139 @@ em {
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.contato-grid {
+  padding: 0 60px 80px;
+}
+
+.contato-info h3,
+.horarios-info h3 {
+  font-size: 20px;
+  color: #c9a24b;
+  margin-bottom: 14px;
+}
+
+.horarios-info li {
+  color: #b8b2a7;
+  font-size: 14px;
+}
+
+.horarios-info strong {
+  color: #f2ede4;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 16px 20px;
+    gap: 12px;
+  }
+
+  .logo-text {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 8px;
+    padding-top: 12px;
+    border-top: 1px solid #2a2723;
+  }
+
+  .nav-links a {
+    font-size: 11px;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    padding: 24px 20px 40px;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 190px;
+    height: 190px;
+    padding: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+    margin: 12px 0;
+  }
+
+  .hero-desc {
+    font-size: 14px;
+    margin-bottom: 22px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    max-width: 280px;
+    padding: 14px 20px;
+    font-size: 12px;
+    margin-bottom: 28px;
+  }
+
+  .stats {
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .stat-number {
+    font-size: 19px;
+  }
+
+  .stat-label {
+    font-size: 9px;
+  }
+
+  .section-header {
+    flex-direction: column;
+    gap: 6px;
+    padding: 32px 20px 20px;
+  }
+
+  .section-header h2 {
+    font-size: 24px;
+  }
+
+  .servicos-grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px 32px;
+  }
+
+  .servico-card {
+    padding: 20px 14px;
+    border-left: none;
+  }
+
+  .servico-card h3 {
+    font-size: 18px;
+  }
+
+  .galeria-grid {
+    column-count: 1;
+    padding: 0 20px 32px;
+  }
+
+  .equipe-grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px 32px;
+  }
+
+  .barbeiro-card {
+    padding: 24px 14px;
+    border-left: none;
+  }
+
+  .contato-grid {
+    flex-direction: column;
+    padding: 0 20px 48px;
+    gap: 28px;
+  }
 }
