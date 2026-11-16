@@ -15,7 +15,7 @@ interface ApiResponse<T> {
   providedIn: 'root'
 })
 export class BarbeariaService {
-  private readonly apiUrl = 'http://localhost:8000/api/v1';
+  readonly apiUrl = 'https://api-barbearia-ads.onrender.com/api/v1';
 
   constructor(private http: HttpClient) {}
 
