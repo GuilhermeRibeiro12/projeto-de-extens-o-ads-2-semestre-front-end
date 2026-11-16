@@ -22,50 +22,53 @@ em {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 60px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 20px 32px;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .logo-circle {
   border: 1px solid #c9a24b;
   border-radius: 50%;
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'Playfair Display', serif;
+  font-size: 13px;
   color: #c9a24b;
   flex-shrink: 0;
 }
 
 .logo-text {
   letter-spacing: 2px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
 }
 
 .nav-links {
   display: flex;
-  gap: 36px;
+  gap: 28px;
 }
 
 .nav-links a {
   color: #f2ede4;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 11.5px;
   letter-spacing: 1px;
 }
 
 .nav-agendar {
   color: #c9a24b;
   text-decoration: underline;
-  font-size: 13px;
+  font-size: 11.5px;
   letter-spacing: 1px;
   font-weight: 600;
 }
@@ -74,52 +77,54 @@ em {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 60px 60px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 28px 32px 48px;
   gap: 40px;
 }
 
 .hero-text {
   flex: 1;
-  max-width: 560px;
+  max-width: 480px;
 }
 
 .eyebrow {
   color: #c9a24b;
-  font-size: 12px;
+  font-size: 10.5px;
   letter-spacing: 2px;
 }
 
 .hero-text h1 {
-  font-size: clamp(32px, 4.5vw, 54px);
-  line-height: 1.15;
-  margin: 18px 0;
+  font-size: clamp(28px, 3.2vw, 40px);
+  line-height: 1.18;
+  margin: 14px 0;
 }
 
 .hero-desc {
   color: #b8b2a7;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.6;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
 .btn-primary {
   background-color: #c9a24b;
   color: #12100e;
   border: none;
-  padding: 15px 30px;
+  padding: 12px 24px;
   font-weight: 600;
   letter-spacing: 1px;
-  font-size: 13px;
+  font-size: 11.5px;
   border-radius: 30px;
   cursor: pointer;
-  margin-bottom: 44px;
+  margin-bottom: 32px;
   text-decoration: none;
   display: inline-block;
 }
 
 .stats {
   display: flex;
-  gap: 36px;
+  gap: 32px;
 }
 
 .stat {
@@ -129,14 +134,14 @@ em {
 
 .stat-number {
   font-family: 'Playfair Display', serif;
-  font-size: 22px;
+  font-size: 19px;
 }
 
 .stat-label {
-  font-size: 11px;
+  font-size: 9.5px;
   color: #8a8377;
   letter-spacing: 1px;
-  margin-top: 4px;
+  margin-top: 3px;
 }
 
 .hero-image {
@@ -148,30 +153,32 @@ em {
 
 .hero-image img {
   display: block;
-  width: 340px;
-  height: 340px;
+  width: 260px;
+  height: 260px;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: contain;
   background-color: #0d0b09;
-  padding: 16px;
-  border: 2px solid #c9a24b;
+  padding: 12px;
+  border: 1.5px solid #c9a24b;
 }
 
 .section-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 50px 60px 36px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 40px 32px 24px;
   border-top: 1px solid #2a2723;
 }
 
 .section-header h2 {
-  font-size: clamp(26px, 3vw, 36px);
+  font-size: clamp(22px, 2.4vw, 28px);
 }
 
 .section-tag {
-  font-size: 11px;
+  font-size: 10px;
   color: #8a8377;
   letter-spacing: 1px;
 }
@@ -180,11 +187,13 @@ em {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0;
-  padding: 0 60px 60px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 32px 48px;
 }
 
 .servico-card {
-  padding: 28px;
+  padding: 22px;
   border-left: 1px solid #2a2723;
   border-bottom: 1px solid #2a2723;
   display: flex;
@@ -194,18 +203,19 @@ em {
 .servico-num {
   color: #c9a24b;
   font-family: 'Playfair Display', serif;
+  font-size: 13px;
 }
 
 .servico-card h3 {
-  font-size: 20px;
-  margin: 10px 0;
+  font-size: 17px;
+  margin: 8px 0;
 }
 
 .servico-card p {
   color: #b8b2a7;
-  font-size: 14px;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 1.55;
+  margin-bottom: 16px;
 }
 
 .servico-rodape {
@@ -218,28 +228,28 @@ em {
 .servico-preco {
   font-family: 'Playfair Display', serif;
   color: #c9a24b;
-  font-size: 19px;
+  font-size: 16px;
 }
 
 .servico-duracao {
   color: #8a8377;
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 1px;
 }
 
 .galeria-grid {
   column-count: 3;
-  column-gap: 16px;
-  max-width: 1000px;
+  column-gap: 14px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 0 60px 60px;
+  padding: 0 32px 48px;
 }
 
 .galeria-grid img {
   display: block;
   width: 100%;
   height: auto;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   border-radius: 4px;
   break-inside: avoid;
 }
@@ -248,44 +258,46 @@ em {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0;
-  max-width: 1000px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 0 60px 60px;
+  padding: 0 32px 48px;
 }
 
 .barbeiro-card {
   text-align: center;
-  padding: 40px 24px;
+  padding: 32px 20px;
   border-left: 1px solid #2a2723;
   border-bottom: 1px solid #2a2723;
 }
 
 .barbeiro-card h3 {
-  font-size: 22px;
-  margin-bottom: 8px;
+  font-size: 19px;
+  margin-bottom: 6px;
 }
 
 .barbeiro-card p {
   color: #c9a24b;
-  font-size: 12px;
-  letter-spacing: 2px;
+  font-size: 11px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
 }
 
 .contato-grid {
-  padding: 0 60px 80px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 32px 60px;
 }
 
 .contato-info h3,
 .horarios-info h3 {
-  font-size: 20px;
+  font-size: 18px;
   color: #c9a24b;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .horarios-info li {
   color: #b8b2a7;
-  font-size: 14px;
+  font-size: 13.5px;
 }
 
 .horarios-info strong {
@@ -295,114 +307,113 @@ em {
 @media (max-width: 768px) {
   .navbar {
     flex-wrap: wrap;
-    padding: 16px 20px;
-    gap: 12px;
+    padding: 14px 18px;
+    gap: 10px;
   }
 
   .logo-text {
-    font-size: 12px;
-    letter-spacing: 1.5px;
+    font-size: 11px;
   }
 
   .nav-links {
     order: 3;
     width: 100%;
     justify-content: space-between;
-    gap: 8px;
-    padding-top: 12px;
+    gap: 6px;
+    padding-top: 10px;
     border-top: 1px solid #2a2723;
   }
 
   .nav-links a {
-    font-size: 11px;
+    font-size: 10.5px;
   }
 
   .hero {
     flex-direction: column-reverse;
-    padding: 24px 20px 40px;
-    gap: 24px;
+    padding: 20px 18px 32px;
+    gap: 20px;
     text-align: center;
   }
 
   .hero-image img {
-    width: 190px;
-    height: 190px;
-    padding: 10px;
+    width: 165px;
+    height: 165px;
+    padding: 8px;
   }
 
   .hero-text h1 {
-    font-size: 28px;
-    margin: 12px 0;
+    font-size: 24px;
+    margin: 10px 0;
   }
 
   .hero-desc {
-    font-size: 14px;
-    margin-bottom: 22px;
+    font-size: 13px;
+    margin-bottom: 18px;
   }
 
   .btn-primary {
     width: 100%;
-    max-width: 280px;
-    padding: 14px 20px;
-    font-size: 12px;
-    margin-bottom: 28px;
+    max-width: 250px;
+    padding: 12px 18px;
+    font-size: 11px;
+    margin-bottom: 24px;
   }
 
   .stats {
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: space-around;
+    gap: 8px;
   }
 
   .stat-number {
-    font-size: 19px;
+    font-size: 17px;
   }
 
   .stat-label {
-    font-size: 9px;
+    font-size: 8.5px;
   }
 
   .section-header {
     flex-direction: column;
-    gap: 6px;
-    padding: 32px 20px 20px;
+    gap: 4px;
+    padding: 28px 18px 16px;
   }
 
   .section-header h2 {
-    font-size: 24px;
+    font-size: 21px;
   }
 
   .servicos-grid {
     grid-template-columns: 1fr;
-    padding: 0 20px 32px;
+    padding: 0 18px 28px;
   }
 
   .servico-card {
-    padding: 20px 14px;
+    padding: 16px 12px;
     border-left: none;
   }
 
   .servico-card h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .galeria-grid {
     column-count: 1;
-    padding: 0 20px 32px;
+    padding: 0 18px 28px;
   }
 
   .equipe-grid {
     grid-template-columns: 1fr;
-    padding: 0 20px 32px;
+    padding: 0 18px 28px;
   }
 
   .barbeiro-card {
-    padding: 24px 14px;
+    padding: 20px 12px;
     border-left: none;
   }
 
   .contato-grid {
     flex-direction: column;
-    padding: 0 20px 48px;
-    gap: 28px;
+    padding: 0 18px 40px;
+    gap: 24px;
   }
 }
